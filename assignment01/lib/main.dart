@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,26 +21,33 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             Column(
               children: [
+                Padding(padding: const EdgeInsets.all(10.0)),
                 Container(
                   child: Center(
                     child: Text("container 1"),
                   ),
                   width: 100,
                   height: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  child: Center(
-                    child: Text("container 2"),
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    border: Border.all(color: Colors.black, width: 3),
                   ),
-                  width: 100,
-                  height: 100,
-                  color: Colors.red,
                 ),
+                Transform.rotate(
+                    angle: pi / 4,
+                    child: Container(
+                      child: Center(
+                        child: Text("container 2"),
+                      ),
+                      width: 100,
+                      height: 100,
+                      color: Colors.red,
+                    )),
               ],
             ),
             Column(
               children: [
+                Padding(padding: const EdgeInsets.all(10.0)),
                 Container(
                   child: Center(
                     child: Text("container 3"),
@@ -47,6 +56,7 @@ class MyApp extends StatelessWidget {
                   height: 100,
                   color: Colors.yellow,
                 ),
+                Padding(padding: const EdgeInsets.all(10.0)),
                 Container(
                   child: Center(
                     child: Text("container 4"),
@@ -59,6 +69,7 @@ class MyApp extends StatelessWidget {
             ),
             Column(
               children: [
+                Padding(padding: const EdgeInsets.all(10.0)),
                 Container(
                   child: Center(
                     child: Text("container 5"),
