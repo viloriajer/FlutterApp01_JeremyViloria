@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
         ),
         body: Row(
           children: <Widget>[
+            Padding(padding: const EdgeInsets.all(10.0)),
             Column(
               children: [
-                Padding(padding: const EdgeInsets.all(10.0)),
                 Container(
                   child: Center(
                     child: Text("container 1"),
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                   width: 100,
                   height: 100,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.orange,
                     border: Border.all(color: Colors.black, width: 3),
                   ),
                 ),
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
                       ),
                       width: 100,
                       height: 100,
-                      color: Colors.red,
+                      color: Colors.white,
                     )),
               ],
             ),
@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
                   ),
                   width: 100,
                   height: 100,
-                  color: Colors.green,
+                  color: Colors.blue,
                 ),
               ],
             ),
@@ -74,9 +74,14 @@ class MyApp extends StatelessWidget {
                   child: Center(
                     child: Text("container 5"),
                   ),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.black,
+                    border: Border.all(color: Colors.white, width: 3),
+                  ),
                   width: 100,
                   height: 100,
-                  color: Colors.orange,
+                  //color: Colors.orange,
                 ),
                 Container(
                   child: Center(
@@ -84,7 +89,7 @@ class MyApp extends StatelessWidget {
                   ),
                   width: 100,
                   height: 100,
-                  color: Colors.brown,
+                  color: Colors.red,
                 ),
               ],
             ),
