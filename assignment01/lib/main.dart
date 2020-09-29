@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -72,7 +73,10 @@ class MyApp extends StatelessWidget {
                 Padding(padding: const EdgeInsets.all(10.0)),
                 Container(
                   child: Center(
-                    child: Text("container 5"),
+                    child: Text(
+                      "container 5",
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
