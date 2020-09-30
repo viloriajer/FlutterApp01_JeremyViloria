@@ -16,12 +16,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text("Assignment one RIP"),
+          title: Text("Assignment One Demo"),
         ),
         body: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            //Padding(padding: const EdgeInsets.all(10.0)),
             Column(
               children: [
                 Padding(
@@ -52,28 +51,32 @@ class MyApp extends StatelessWidget {
             ),
             Column(
               children: [
-                Padding(padding: const EdgeInsets.all(10.0)),
                 Expanded(
-                  child: Container(
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text("container 3"),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Text("container 3"),
+                      ),
+                      width: 100,
+                      height: 100,
+                      color: Colors.yellow,
                     ),
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow,
                   ),
                 ),
-                Padding(padding: const EdgeInsets.all(10.0)),
                 Expanded(
-                  child: Container(
-                    child: Align(
-                      alignment: Alignment.centerRight,
-                      child: Text("container 4"),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Container(
+                      child: Align(
+                        alignment: Alignment.centerRight,
+                        child: Text("container 4"),
+                      ),
+                      width: 100,
+                      height: 100,
+                      color: Colors.blue,
                     ),
-                    width: 100,
-                    height: 100,
-                    color: Colors.blue,
                   ),
                 ),
               ],
@@ -81,7 +84,6 @@ class MyApp extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                //Padding(padding: EdgeInsets.all(10)),
                 Expanded(
                   flex: 2,
                   child: Container(
@@ -101,7 +103,6 @@ class MyApp extends StatelessWidget {
                     //color: Colors.orange,
                   ),
                 ),
-
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
