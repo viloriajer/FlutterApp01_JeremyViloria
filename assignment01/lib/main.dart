@@ -24,16 +24,18 @@ class MyApp extends StatelessWidget {
             //Padding(padding: const EdgeInsets.all(10.0)),
             Column(
               children: [
-                Padding(padding: const EdgeInsets.fromLTRB(10.0, 0, 10.0, 0)),
-                Container(
-                  child: Align(
-                    child: Text("container 1"),
-                  ),
-                  width: 100,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.orange,
-                    border: Border.all(color: Colors.black, width: 3),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  child: Container(
+                    child: Align(
+                      child: Text("container 1"),
+                    ),
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                      border: Border.all(color: Colors.black, width: 3),
+                    ),
                   ),
                 ),
                 Transform.rotate(
@@ -51,54 +53,68 @@ class MyApp extends StatelessWidget {
             Column(
               children: [
                 Padding(padding: const EdgeInsets.all(10.0)),
-                Container(
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Text("container 3"),
+                Expanded(
+                  child: Container(
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text("container 3"),
+                    ),
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
                   ),
-                  width: 100,
-                  height: 100,
-                  color: Colors.yellow,
                 ),
                 Padding(padding: const EdgeInsets.all(10.0)),
-                Container(
-                  child: Align(
-                    alignment: Alignment.centerRight,
-                    child: Text("container 4"),
+                Expanded(
+                  child: Container(
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child: Text("container 4"),
+                    ),
+                    width: 100,
+                    height: 100,
+                    color: Colors.blue,
                   ),
-                  width: 100,
-                  height: 100,
-                  color: Colors.blue,
                 ),
               ],
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Padding(padding: const EdgeInsets.all(10.0)),
-                Container(
-                  child: Center(
-                    child: Text(
-                      "container 5",
-                      style: TextStyle(color: Colors.white),
+                //Padding(padding: EdgeInsets.all(10)),
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    child: Center(
+                      child: Text(
+                        "container 5",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                      border: Border.all(color: Colors.white, width: 3),
+                    ),
+                    width: 100,
+                    height: 100,
+                    //color: Colors.orange,
+                  ),
+                ),
+
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                    child: Container(
+                      child: Align(
+                        alignment: Alignment.topLeft,
+                        child: Text("Con 6", style: TextStyle(fontSize: 30)),
+                      ),
+                      width: 100,
+                      height: 100,
+                      color: Colors.red,
                     ),
                   ),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.black,
-                    border: Border.all(color: Colors.white, width: 3),
-                  ),
-                  width: 100,
-                  height: 100,
-                  //color: Colors.orange,
-                ),
-                Container(
-                  child: Align(
-                    alignment: Alignment.topLeft,
-                    child: Text("Con 6", style: TextStyle(fontSize: 30)),
-                  ),
-                  width: 100,
-                  height: 100,
-                  color: Colors.red,
                 ),
               ],
             ),
