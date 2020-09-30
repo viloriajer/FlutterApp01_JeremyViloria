@@ -50,7 +50,8 @@ class MyApp extends StatelessWidget {
               children: [
                 Padding(padding: const EdgeInsets.all(10.0)),
                 Container(
-                  child: Center(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
                     child: Text("container 3"),
                   ),
                   width: 100,
@@ -59,7 +60,8 @@ class MyApp extends StatelessWidget {
                 ),
                 Padding(padding: const EdgeInsets.all(10.0)),
                 Container(
-                  child: Center(
+                  child: Align(
+                    alignment: Alignment.centerRight,
                     child: Text("container 4"),
                   ),
                   width: 100,
@@ -88,8 +90,9 @@ class MyApp extends StatelessWidget {
                   //color: Colors.orange,
                 ),
                 Container(
-                  child: Center(
-                    child: Text("container 6"),
+                  child: Align(
+                    alignment: Alignment.topLeft,
+                    child: Text("Con 6", style: TextStyle(fontSize: 30)),
                   ),
                   width: 100,
                   height: 100,
