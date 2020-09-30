@@ -19,12 +19,14 @@ class MyApp extends StatelessWidget {
           title: Text("Assignment one RIP"),
         ),
         body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Padding(padding: const EdgeInsets.all(10.0)),
+            //Padding(padding: const EdgeInsets.all(10.0)),
             Column(
               children: [
+                Padding(padding: const EdgeInsets.fromLTRB(10.0, 0, 10.0, 0)),
                 Container(
-                  child: Center(
+                  child: Align(
                     child: Text("container 1"),
                   ),
                   width: 100,
